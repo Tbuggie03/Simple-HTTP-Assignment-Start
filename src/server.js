@@ -15,6 +15,18 @@ const onRequest = (req, res) => {
     case '/page2':
       htmlHandler.getPage2(req, res);
       break;
+    case '/hello':
+      textHandler.getHello(req, res);
+      break;
+    case '/time':
+      textHandler.getTime(req, res);
+      break;
+    case '/helloJSON':
+      jsonHandler.getHelloJSON(req, res);
+      break;
+    case '/timeJSON':
+      jsonHandler.getTimeJSON(req, res);
+      break;
     default:
       htmlHandler.getIndex(req, res);
       break;
